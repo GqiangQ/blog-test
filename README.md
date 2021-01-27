@@ -18,3 +18,5 @@ yarn add typeorm reflect-metadata pg
 ~~~
 typeorm init --name blog-test[文件名] --database postgres[使用的数据库名]
 ~~~
+
+## 当执行yarn dev 时next会修改回原来的tsconfig文件
