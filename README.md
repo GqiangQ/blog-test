@@ -13,3 +13,8 @@ yarn add typeorm reflect-metadata pg
 "emitDecoratorMetadata": true,
 "experimentalDecorators": true,
 ```
+
+## 初始化typeorm 在父级目录执行
+~~~
+typeorm init --name blog-test[文件名] --database postgres[使用的数据库名]
+~~~
