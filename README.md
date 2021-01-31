@@ -30,3 +30,11 @@ typeorm init --name blog-test[文件名] --database postgres[使用的数据库�
 docker run -v blog-dat:/var/lib/postgresql/data -p 5432:5432 -e POSTGRES_USER=blog -e POSTGRES_PASSWORD=blog 
 --name postgres 1f1bd4302537
 ~~~
+
+## 创建表
+创建一个名字为Commit 的表
+typeorm entity:create Commit
+然后在表中进行修改表格的 字段
+
+## 修改表结构
+这个在实际应用中还是挺常见的操作，由于业务变化，增加字段或者关联表，而又不能重新建表，就听过 migration 操作来修改表
