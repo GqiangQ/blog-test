@@ -40,3 +40,10 @@ typeorm entity:create Commit
 这个在实际应用中还是挺常见的操作，由于业务变化，增加字段或者关联表，而又不能重新建表，就听过 migration 操作来修改表
 
 、、、也可以直接在entity中直接修改数据类型
+
+
+### 话不知道为在entity中不能修改自动填充的属性
+所有在migration中修改数据类型
+
+使用 typeorm migration:create -n [name] 创建修改模型
+使用 typeorm migration:run 执行命令

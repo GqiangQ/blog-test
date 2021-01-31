@@ -5,7 +5,10 @@
    "scripts": {
       "dev": "next dev",
       "build": "next build",
-      "sql:dev": "nodemon src/seed.ts"
+      "sql:dev": "nodemon src/seed.ts ",
+      "m:create": "typeorm migration:create",
+      "m:run": "typeorm migration:run",
+      "e:create": "typeorm entity:create"
    },
    "dependencies": {
       "next": "10.0.5",
