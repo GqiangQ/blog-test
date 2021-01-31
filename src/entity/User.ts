@@ -13,12 +13,12 @@ export class User {
     @Column('varchar')
     password: string;
     // 年龄
-    @Column('number')
+    @Column('int')
     age: number;
     // 电话
-    @Column('number')
+    @Column('varchar')
     phoneNumber: number
-    // 性别
+    // 性别 默认是男生 true
     @Column('boolean')
     six: boolean
     // 邮箱

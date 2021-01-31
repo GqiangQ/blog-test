@@ -21,6 +21,8 @@ export class Post {
   // 跟新时间
   @Column({type: "timestamp"})
   updateAt: Date
+  @Column({type: 'json'})
+  views: JSON
   // 点赞
   @Column("int")
   upTotal: number
